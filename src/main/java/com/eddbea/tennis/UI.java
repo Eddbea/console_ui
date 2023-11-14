@@ -7,12 +7,11 @@ public class UI {
     public static void main(String[] args) {
 
         JoueurController controller = new JoueurController();
-        //controller.afficherDetailsJoueur();
+        controller.afficherDetailsJoueur();
         //controller.creerJoueur();
-        TournoiController tournoiController = new TournoiController();
+        //TournoiController tournoiController = new TournoiController();
         //tournoiController.afficheDetailTournoi();
-        tournoiController.creerTournoi();
-
-
+        //tournoiController.creerTournoi();
+        
     }
 }
