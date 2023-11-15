@@ -33,6 +33,6 @@ public class JoueurController {
         char sexeJoueur = scanner.nextLine().charAt(0);
         joueurNouveau.setSexe(sexeJoueur);
         joueurService.createJoueur(joueurNouveau);
-
+        System.out.println("Le joueur a ete cree, son identifiant est = "+joueurNouveau.getId());
     }
 }
