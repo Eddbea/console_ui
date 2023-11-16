@@ -35,4 +35,13 @@ public class JoueurController {
         joueurService.createJoueur(joueurNouveau);
         System.out.println("Le joueur a ete cree, son identifiant est = "+joueurNouveau.getId());
     }
+    public void renommeJoueur() {
+        System.out.println("Quel est l'identifiant du joueur que vous voulez renommer ?");
+        long identifiant = scanner.nextLong();
+        scanner.nextLine();
+        System.out.println("Quel est le nouveau nom que vous voulez enregistrer ?");
+        String nouveauNom = scanner.nextLine();
+        joueurService.renomme(identifiant,nouveauNom);
+        System.out.println("Le nouveau nom du joueur enregistre est desormais :  "+nouveauNom );
+    }
 }
