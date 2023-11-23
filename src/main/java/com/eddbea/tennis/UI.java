@@ -6,13 +6,13 @@ import com.eddbea.tennis.controller.TournoiController;
 public class UI {
     public static void main(String[] args) {
 
-        JoueurController controller = new JoueurController();
-        //controller.afficherDetailsJoueur();
-        //controller.creerJoueur();
+        JoueurController joueurController = new JoueurController();
+        //joueurController.afficherDetailsJoueur();
+        //joueurController.creerJoueur();
         //TournoiController tournoiController = new TournoiController();
         //tournoiController.afficheDetailTournoi();
-       // tournoiController.creerTournoi();
-        controller.renommeJoueur();
+        //tournoiController.creerTournoi();
+        joueurController.renommeJoueur();
 
         
     }
