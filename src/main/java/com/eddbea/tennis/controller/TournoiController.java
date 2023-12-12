@@ -18,7 +18,7 @@ public class TournoiController {
         System.out.println("Quel est l'identifiant du tournoi dont vous voulez afficher les informations ?");
         long idTournoi = scanner.nextLong();
         Tournoi tournoi = tournoiService.getTournoi(idTournoi);
-        System.out.println("Le joueur selectionne s'appelle " + tournoi.getNom() + " " + tournoi.getCode());
+        System.out.println("Le tournoi selectionne s'appelle " + tournoi.getNom() + " " + tournoi.getCode());
     }
 
     public void creerTournoi(){

@@ -20,6 +20,7 @@ public class UI {
         //joueurController.creerJoueur();
         //joueurController.supprimeJoueur();
         TournoiController tournoiController = new TournoiController();
-        tournoiController.supprimeTournoi();
+        //tournoiController.supprimeTournoi();
+        tournoiController.afficheDetailTournoi();
     }
 }
