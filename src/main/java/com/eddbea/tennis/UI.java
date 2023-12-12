@@ -16,6 +16,8 @@ public class UI {
         //joueurController.reprenommeJoueur();
         //joueurController.changeSexeJoueur();
         //joueurController.reprenommeJoueur();
-        joueurController.renommeJoueur();
+        //joueurController.renommeJoueur();
+        //joueurController.creerJoueur();
+        joueurController.supprimeJoueur();
     }
 }
