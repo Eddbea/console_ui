@@ -18,6 +18,8 @@ public class UI {
         //joueurController.reprenommeJoueur();
         //joueurController.renommeJoueur();
         //joueurController.creerJoueur();
-        joueurController.supprimeJoueur();
+        //joueurController.supprimeJoueur();
+        TournoiController tournoiController = new TournoiController();
+        tournoiController.supprimeTournoi();
     }
 }

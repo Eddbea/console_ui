@@ -31,4 +31,10 @@ public class TournoiController {
         tournoiCree.setCode(codeTournoi);
         tournoiService.createTournoi(tournoiCree);
     }
+    public void supprimeTournoi() {
+        System.out.println("Quel est l'identifiant du tournoi que vous voulez supprimer ?");
+        long identifiant = scanner.nextLong();
+        scanner.nextLine();
+        tournoiService.deleteTournoi(identifiant);
+    }
 }
