@@ -12,8 +12,10 @@ public class UI {
         //TournoiController tournoiController = new TournoiController();
         //tournoiController.afficheDetailTournoi();
         //tournoiController.creerTournoi();
+        //joueurController.renommeJoueur();
+        //joueurController.reprenommeJoueur();
+        //joueurController.changeSexeJoueur();
+        //joueurController.reprenommeJoueur();
         joueurController.renommeJoueur();
-
-        
     }
 }

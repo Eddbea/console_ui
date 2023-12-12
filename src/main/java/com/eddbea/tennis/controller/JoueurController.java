@@ -44,4 +44,24 @@ public class JoueurController {
         joueurService.renomme(identifiant,nouveauNom);
         System.out.println("Le nouveau nom du joueur enregistre est desormais :  "+nouveauNom );
     }
+    public void reprenommeJoueur() {
+        System.out.println("Quel est l'identifiant du joueur que vous voulez reprenommer ?");
+        long identifiant = scanner.nextLong();
+        scanner.nextLine();
+        System.out.println("Quel est le nouveau prenom que vous voulez enregistrer ?");
+        String nouveauPrenom = scanner.nextLine();
+        joueurService.reprenomme(identifiant,nouveauPrenom);
+        System.out.println("Le nouveau nom du joueur enregistre est desormais :  "+nouveauPrenom );
+    }
+
+    public void changeSexeJoueur(){
+        System.out.println("Quel est l'identifiant du joueur dont vous voulez modifier le sexe ?");
+        long identifiant = scanner.nextLong();
+        scanner.nextLine();
+        System.out.println("Quel est le nouveau sexe que vous voulez enregistrer ?");
+        char nouveauSexe = scanner.nextLine().charAt(0);
+        joueurService.changeSexe(identifiant,nouveauSexe);
+        System.out.println("Le nouveau sexe du joueur enregistre est desormais :  "+nouveauSexe );
+    }
+
 }
