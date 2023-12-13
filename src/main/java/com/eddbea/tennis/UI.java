@@ -1,6 +1,7 @@
 package com.eddbea.tennis;
 
 import com.eddbea.tennis.controller.JoueurController;
+import com.eddbea.tennis.controller.ScoreController;
 import com.eddbea.tennis.controller.TournoiController;
 
 public class UI {
@@ -21,6 +22,8 @@ public class UI {
         //joueurController.supprimeJoueur();
         TournoiController tournoiController = new TournoiController();
         //tournoiController.supprimeTournoi();
-        tournoiController.afficheDetailTournoi();
+        //tournoiController.afficheDetailTournoi();
+        ScoreController scoreController = new ScoreController();
+        scoreController.afficheDetailScore();
     }
 }
