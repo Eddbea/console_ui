@@ -1,5 +1,7 @@
 package com.eddbea.tennis.controller;
 
+import com.eddbea.tennis.dto.EpreuveFullDto;
+import com.eddbea.tennis.dto.EpreuveLightDto;
 import com.eddbea.tennis.entity.Epreuve;
 import com.eddbea.tennis.entity.Tournoi;
 import com.eddbea.tennis.service.EpreuveService;
@@ -18,13 +20,13 @@ public class EpreuveController {
     public void afficheDeniereEpreuve() {
         System.out.println("Quel est l'identifiant du tournoi dont vous voulez afficher les informations ?");
         long idEpreuve = scanner.nextLong();
-        Epreuve epreuve = epreuveService.getEpreuveAvecTournoi(idEpreuve);
-        System.out.println("Le nom du tournoi est "+epreuve.getTournoi().getNom());
+        EpreuveFullDto epreuve = epreuveService.getEpreuveAvecTournoi(idEpreuve);
+        System.out.println("Le nom du tournoi est "+epreuve.getTournoiDto().getNom());
     }
+
     public void afficheRolandGarros() {
         System.out.println("Quel est l'identifiant du tournoi dont vous voulez afficher les informations ?");
         long idEpreuve = scanner.nextLong();
-        Epreuve epreuve = epreuveService.getEpreuveSansTournoi(idEpreuve);
-        //System.out.println("Le nom du tournoi est "+epreuve.getTournoi().getNom());
+        EpreuveLightDto epreuve = epreuveService.getEpreuveSansTournoi(idEpreuve);
     }
 }
