@@ -1,5 +1,6 @@
 package com.eddbea.tennis.controller;
 
+import com.eddbea.tennis.dto.TournoiDto;
 import com.eddbea.tennis.entity.Tournoi;
 import com.eddbea.tennis.service.TournoiService;
 
@@ -17,12 +18,12 @@ public class TournoiController {
     public void afficheDetailTournoi() {
         System.out.println("Quel est l'identifiant du tournoi dont vous voulez afficher les informations ?");
         long idTournoi = scanner.nextLong();
-        Tournoi tournoi = tournoiService.getTournoi(idTournoi);
+        TournoiDto tournoi = tournoiService.getTournoi(idTournoi);
         System.out.println("Le tournoi selectionne s'appelle " + tournoi.getNom() + " " + tournoi.getCode());
     }
 
     public void creerTournoi(){
-        Tournoi tournoiCree = new Tournoi();
+        TournoiDto tournoiCree = new TournoiDto();
         System.out.println("Quel est le nom du Tournoi que vous souhaitez creer");
         String nomTournoi = scanner.nextLine();
         tournoiCree.setNom(nomTournoi);
