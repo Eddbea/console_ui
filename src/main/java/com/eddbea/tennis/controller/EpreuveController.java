@@ -19,7 +19,7 @@ public class EpreuveController {
         System.out.println("Quel est l'identifiant du tournoi dont vous voulez afficher les informations ?");
         long idEpreuve = scanner.nextLong();
         Epreuve epreuve = epreuveService.getEpreuve(idEpreuve);
-        System.out.println("L'Epreuve selectionnee se deroule en " + epreuve.getAnnee());
+        System.out.println("L'Epreuve selectionnee se deroule en " + epreuve.getAnnee()+" et il s'agit du tournoi "+epreuve.getTournoi().getNom());
     }
 
 }
