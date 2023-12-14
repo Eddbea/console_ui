@@ -29,8 +29,7 @@ public class ScoreController {
                 System.out.println("Voici le score demande 1er set= " + returnPositif + "/7");
             } else if (returnPositif == 6) {
                 System.out.println("Voici le score demande 1er set= " + returnPositif + "/7");
-            }
-            else if ((returnPositif == 4)||(returnPositif == 3)||(returnPositif == 2)||(returnPositif == 1)){
+            } else if ((returnPositif == 4) || (returnPositif == 3) || (returnPositif == 2) || (returnPositif == 1)) {
                 System.out.println("Voici le score demande 1er set= " + returnPositif + "/6");
             }
             System.out.println();
@@ -46,13 +45,12 @@ public class ScoreController {
                 System.out.println("Voici le score demande 1er set= " + returnPositif + "/7");
             } else if (returnPositif == 6) {
                 System.out.println("Voici le score demande 1er set= " + returnPositif + "/7");
-            }
-            else if ((returnPositif == 4)||(returnPositif == 3)||(returnPositif == 2)||(returnPositif == 1)){
+            } else if ((returnPositif == 4) || (returnPositif == 3) || (returnPositif == 2) || (returnPositif == 1)) {
                 System.out.println("Voici le score demande 1er set= " + returnPositif + "/6");
             }
             System.out.println();
         }
-        if(score.getSet3()!=null) {
+        if (score.getSet3() != null) {
             int scoreOrigineSet3 = score.getSet3();
             if ((scoreOrigineSet3 == 0) || (scoreOrigineSet3 == 1) || (scoreOrigineSet3 == 2) || (scoreOrigineSet3 == 3) || (scoreOrigineSet3 == 4)) {
                 System.out.println("Voici le score demande 1er set= 6/" + scoreOrigineSet3);
@@ -70,7 +68,7 @@ public class ScoreController {
                 System.out.println();
             }
         }
-        if(score.getSet4()!=null) {
+        if (score.getSet4() != null) {
             int scoreOrigineSet4 = score.getSet4();
             if ((scoreOrigineSet4 == 0) || (scoreOrigineSet4 == 1) || (scoreOrigineSet4 == 2) || (scoreOrigineSet4 == 3) || (scoreOrigineSet4 == 4)) {
                 System.out.println("Voici le score demande 1er set= 6/" + scoreOrigineSet4);
@@ -88,7 +86,7 @@ public class ScoreController {
                 System.out.println();
             }
         }
-        if(score.getSet5()!=null) {
+        if (score.getSet5() != null) {
             int scoreOrigineSet5 = score.getSet5();
             if ((scoreOrigineSet5 == 0) || (scoreOrigineSet5 == 1) || (scoreOrigineSet5 == 2) || (scoreOrigineSet5 == 3) || (scoreOrigineSet5 == 4)) {
                 System.out.println("Voici le score demande 1er set= 6/" + scoreOrigineSet5);
