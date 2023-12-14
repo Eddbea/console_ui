@@ -15,11 +15,16 @@ public class EpreuveController {
     public EpreuveController() {
         this.epreuveService = new EpreuveService();
     }
-    public void afficheDetailEpreuve() {
+    public void afficheDeniereEpreuve() {
         System.out.println("Quel est l'identifiant du tournoi dont vous voulez afficher les informations ?");
         long idEpreuve = scanner.nextLong();
-        Epreuve epreuve = epreuveService.getEpreuve(idEpreuve);
-        //System.out.println("L'Epreuve selectionnee se deroule en " + epreuve.getAnnee()+" et il s'agit du tournoi "+epreuve.getTournoi().getNom());
+        Epreuve epreuve = epreuveService.getEpreuveAvecTournoi(idEpreuve);
+        System.out.println("Le nom du tournoi est "+epreuve.getTournoi().getNom());
     }
-
+    public void afficheRolandGarros() {
+        System.out.println("Quel est l'identifiant du tournoi dont vous voulez afficher les informations ?");
+        long idEpreuve = scanner.nextLong();
+        Epreuve epreuve = epreuveService.getEpreuveSansTournoi(idEpreuve);
+        //System.out.println("Le nom du tournoi est "+epreuve.getTournoi().getNom());
+    }
 }

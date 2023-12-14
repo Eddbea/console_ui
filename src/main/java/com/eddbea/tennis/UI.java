@@ -27,6 +27,7 @@ public class UI {
         ScoreController scoreController = new ScoreController();
         //scoreController.afficheDetailScore();
         EpreuveController epreuveController = new EpreuveController();
-        epreuveController.afficheDetailEpreuve();
+        //epreuveController.afficheDeniereEpreuve();
+        epreuveController.afficheRolandGarros();
     }
 }
